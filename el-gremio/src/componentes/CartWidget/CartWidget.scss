@@ -1,0 +1,34 @@
+.cart-widget{
+    background-color:rgba(35, 34, 34, 0.961);
+    position: relative;
+    margin: 0 10px;
+
+    #boton{
+        cursor: pointer;
+        background-color:transparent;
+        border-style:none; 
+
+        .icon-bolsa{
+            background-color:rgba(35, 34, 34, 0.961);
+            width: 45px;
+        }
+    }
+
+    .contador{
+        background-color:#000000;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        position: absolute;
+        top: 55%;
+        right: 0;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+    }
+}
+

@@ -1,0 +1,51 @@
+.grid-juegos{
+    margin: 40px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  
+    .tarjeta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        color: #ffffff;
+        border-style: solid;
+        border-color: #ffffff;
+        border-width: 1px;
+        border-radius: 10px;
+        padding-bottom: 15px;
+
+
+        .juego-img{
+            max-width: 100%;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        .juego-nombre{
+            font-size: 20px;
+        }
+
+        .juego-precio{
+            font-size: 13px;
+        }
+        
+        .juegos-boton{
+            margin-top: 13px;
+            background-color: #cc0d0d;
+            color: #ffffff;
+            border-radius: 6px;
+            border-color: #ffffff;
+            border-width: 1px;
+        }
+    }
+
+    
+}
+
+.loading {
+    color:#ffffff;
+    margin: 140px 60px ;
+    
+}

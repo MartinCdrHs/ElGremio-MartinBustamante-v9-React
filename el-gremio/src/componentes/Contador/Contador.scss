@@ -1,0 +1,53 @@
+.carrito-controller{
+    display: flex;
+    flex-direction: row;
+
+    .caja-contador {
+        display: flex;
+        flex-direction: row;
+        max-width: 120px;
+        height: 30px;
+        margin: 20px;
+        
+        .show-counter{
+            background-color: #ffffff;
+            font-weight: bold;
+            border-width: 3px;
+            border-color: #000000;
+            width: 50px;
+            text-align: center;
+        }
+    
+        .btn-suma{
+            background-color: #cc0d0d;
+            color: #ffffff;
+            font-weight: bold;
+            width: 35px;
+            border-width: 1px;
+            border-color: #ffffff;
+        }
+    
+        .btn-resta{
+            background-color: #cc0d0d;
+            color: #ffffff;
+            font-weight: bold;
+            width: 35px;
+            border-width: 1px;
+            border-color: #ffffff;
+        }
+    }
+
+    .add-bolsa{
+        background-color: #cc0d0d;
+        color: #ffffff;
+        width: 140px;
+        border-width: 1px;
+        border-color: #ffffff;
+        margin: 20px;
+        height: 30px;
+    }
+}
+
+
+
+

@@ -1,0 +1,65 @@
+.caja-detalle {
+    max-width: 80%;
+    margin: 100px 60px;
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-areas:
+    "nombre nombre"
+    "img desc"
+    "img precio"
+    "volver cont";
+
+    .nombre-detalle{
+        color: #ffffff;
+        font-size: 50px;
+        margin: 50px;
+        text-align: center;
+
+    }
+
+    .img-detalle{
+        margin: 30px;
+        max-width: 70%;
+        border-radius: 5px;
+    }
+
+    .desc-detalle{
+        padding: 40px;
+        color:#ffffff;
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    .precio-detalle{
+        padding:40px;
+        color: #cc0d0d;
+    }
+
+    .volver-detalle{
+        margin-top: 20px;
+        margin-left: 60px;
+        color: #ffffff;
+        background-color: #cc0d0d;
+        border-radius: 5px;
+        border-color: #ffffff;
+        border-width: 1px;
+        max-width: fit-content;
+    }
+
+    .a-la-bolsa{
+        background-color: #cc0d0d;
+        color: #ffffff;
+        width: 140px;
+        border-width: 1px;
+        border-color: #ffffff;
+        margin: 20px;
+        height: 30px;
+    }
+}
+
+#nombre{grid-area: nombre;}
+#img {grid-area: img;}
+#desc {grid-area: desc;}
+#precio {grid-area: precio;}
+#cont {grid-area: cont;}
+#volver {grid-area: volver;}

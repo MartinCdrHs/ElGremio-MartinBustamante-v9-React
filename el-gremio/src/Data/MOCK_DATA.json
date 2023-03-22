@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "nombre": "Gloomhaven",
+        "precio": 7400,
+        "stock": 2,
+        "imagen": "../gloomhaven_480x480.jpg",
+        "descripcion":"Gloomhaven es un juego cooperativo de combate táctico en un mundo de fantasía único y en evolución. Cada jugador asumirá el papel de un mercenario curtido con sus propios intereses personales. Creando un exclusivo tipo de juego lleno de tesoros descubiertos, aventureros retirados y opciones permanentes" ,
+        "categoria": "rol"
+    },
+    {
+        "id": 2,
+        "nombre": "Munchkin",
+        "precio": 8000,
+        "stock": 6,
+        "imagen": "../munchkin_480x480.jpg",
+        "descripcion":"En Munchkin, un jugador empieza siendo un humano de nivel 1 sin clase y su objetivo consiste en alcanzar el nivel 10 antes de que los demás consigan hacerlo. Para ello, cada jugador debe enfrentarse a monstruos encontrados en la mazmorra con la ayuda de armas, superar maldiciones que podrían molestar enormemente y emplear sabiamente el equipamiento encontrado en las mazmorras." ,
+        "categoria": "rol"
+    },
+    {
+        "id": 3,
+        "nombre": "No Lo Testeamos Ni Un Poco",
+        "precio": 2000,
+        "stock": 12,
+        "imagen": "../NLTNUP_480x480.jpg",
+        "descripcion":"Un juego simple, delirante y totalmente caótico donde tu único objetivo es ganar haciendo que los demás pierdan. “No lo testeamos ni un poco” es un juego de cartas creado por Chris Cieslik. El juego en versión original salió en EEUU en el 2009 como “We didn't playtest this at all” por la editorial Asmadi Games." ,
+        "categoria": "cartas"
+    },
+    {
+        "id": 4,
+        "nombre": "Dungeons and Drinks",
+        "precio": 4000,
+        "stock": 8,
+        "imagen": "../dungeonsanddrinks_480x480.jpg",
+        "descripcion":"Dungeons & Drinks es un juego casual y delirante en el que vas a ser parte de un grupo de aventureros borrachos cuya idea de diversión es invadir un dungeon lleno de monstruos inofensivos, para ver quién es capaz de matar más. Durante la partida, siempre va a haber tres monstruos en el centro de la mesa (el “dungeon”): en tu turno elegís uno y lo atacás, generándole un daño. El jugador que le da el golpe final, se lleva los puntos." ,
+        "categoria": "rol"
+    },
+    {
+        "id": 5,
+        "nombre": "Jumanji",
+        "precio": 7000,
+        "stock": 4,
+        "imagen": "../jumanji_480x480.jpg",
+        "descripcion":"El Juego de Mesa de la pelicula! Lee las cartas a través del decodificador. éste te revelará los peligros! Leones que rugen, rinocerontes que atacan, cocodrilos hambrientos y mucho más en el fantástico mundo de Jumanji, y sólo están aun paso tuyo !!! Elige tu péon y comienza a jugar un viaje peligroso, decodifica un mensaje de una carta y puede ser un desastre !!! Si no logras escapar, la jungla te puede devorar. Tu única salida es terminar el juego, solo así los terrores de la jungla podrán desaparecer ..." ,
+        "categoria": "board"
+    },
+    {
+        "id": 6,
+        "nombre": "Here to Slay",
+        "precio": 12000,
+        "stock": 3,
+        "imagen": "../heretoslay_480x480.jpg",
+        "descripcion":"Here to Slay es un juego de cartas de estrategia de fantasía de rol competitivo que se trata de reunir un grupo de héroes y matar monstruos (y, a veces, sabotear a tus friends también) de los creadores de Unstable Unicorns. En este juego, reunirás un grupo completo de héroes para matar monstruos peligrosos mientras trabajas para evitar el sabotaje de tus enemigos." ,
+        "categoria": "rol"
+    }
+]
