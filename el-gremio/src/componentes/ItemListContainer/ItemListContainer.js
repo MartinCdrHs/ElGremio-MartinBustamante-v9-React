@@ -1,11 +1,15 @@
 import  "./ItemListContainer.scss"
-import {buscarJuegos} from "../../helpers/buscarJuegos"
-import ItemList from "../ItemList/ItemList"
+
 import { useEffect, useState } from "react"
+import { useParams } from "react-router-dom";
+import { collection, getDocs, query, where } from "firebase/firestore";
+
+import { db } from "../../firebase/config";
+import ItemList from "../ItemList/ItemList"
 import BoardGreeting from "../BoardGreeting/BoardGreeting"
 import ItemFilter from "../ItemFilter/ItemFilter"
 
-import { useParams } from "react-router-dom";
+
 
 
 
@@ -20,21 +24,28 @@ const ItemListContainer = () => {
 
         setLoading(true)
 
-        buscarJuegos()
-            .then((res)=>{
-                if (!categoria){
-                    setJuegos (res)
-                }else{
-                    setJuegos (res.filter((juego)=> juego.categoria === categoria))
-                }
-                    
+        const juegosRef = collection (db, "juegos")
+
+        const q = categoria
+            ? query (juegosRef, where("categoria", "==", categoria))
+            : juegosRef
+
+
+        getDocs(q)
+            .then( (res) => {
+            
+                const prods = res.docs.map( (doc)=>{
+                    return {
+                        ...doc.data(),
+                        id: doc.id
+                    }
+                })
+                setJuegos(prods)
             })
-            .catch ((er)=>{
-                console.error(er);
+            .finally( ()=> {
+                setLoading(false)
             })
-            .finally(()=>{
-                setLoading (false)
-            })
+
     }, [categoria])
 
 
