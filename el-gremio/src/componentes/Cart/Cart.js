@@ -1,6 +1,5 @@
-import "./Cart.scss"
-
 import { useContext } from "react"
+import { Link } from "react-router-dom";
 
 import CartGreeting from "../CartGreeting/CartGreeting"
 import CartList from "../CartList/CartList"
@@ -12,25 +11,26 @@ import { CartContext } from "../../Context/CartContext"
 
 export const Cart = ()=> {
 
-    const {cart} = useContext (CartContext)
+    const {cart} = useContext(CartContext)
 
     
     
     return(
-        <div>
+
+        cart.length === 0 
+            ? <div>
+                <CartGreeting/>
+                <div className="bolsa-vacia">
+                    No tienes productos en tu bolsa!
+                </div>
+                <Link to= "/"><button className="btn-cart">Seguir comprando</button></Link>
+            </div>
+
+        :<div>
             <CartGreeting/>
-            
-                {/* if (cart.lenght = 0) {
-                    <div className="bolsa-vacia">
-                        No tienes productos en tu bolsa!
-                    </div>
-                }else {} */}
             <CartList/>
-
             <TotalCompra/>
-        
-
-        </div>
+        </div> 
     )
 
 }
