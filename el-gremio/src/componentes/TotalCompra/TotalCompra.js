@@ -21,6 +21,7 @@ const TotalCompra = () => {
             <div>
                 <Link to= "/"><button className="btn-cart">Seguir comprando</button></Link>
                 <button onClick={vaciarCarrito} className="btn-cart" >Vaciar Bolsa</button>
+                <Link to= "/checkout"><button className="btn-cart">Cerrar compra</button></Link>
             </div>
             
 

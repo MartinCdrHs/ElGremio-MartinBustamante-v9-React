@@ -10,6 +10,7 @@ import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer
 import ItemDetailContainer from "./componentes/ItemDetailContainer/ItemDetailContainer";
 import { Cart } from "./componentes/Cart/Cart";
 import { CartProvider } from "./Context/CartContext";
+import Checkout from "./componentes/Checkout/Checkout";
 
 
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/juegos/:categoria" element={<ItemListContainer/>}/>
           <Route path="/detalles/:itemId" element={<ItemDetailContainer/>}/>
           <Route path="/cart" element={<Cart/>} />
+          <Route path="/checkout" element={<Checkout/>} />
           {/* <Route path="" element={}/> */}
 
         </Routes>
