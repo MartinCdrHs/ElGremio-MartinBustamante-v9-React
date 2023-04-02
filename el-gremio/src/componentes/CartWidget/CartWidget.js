@@ -12,7 +12,6 @@ const CartWidget = () => {
 
     const {totalCantidad, cart} = useContext(CartContext)
 
-    console.log(cart.length);
 
     if (cart.length === 0){
         return (
