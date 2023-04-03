@@ -11,7 +11,7 @@ import ItemDetailContainer from "./componentes/ItemDetailContainer/ItemDetailCon
 import { Cart } from "./componentes/Cart/Cart";
 import { CartProvider } from "./Context/CartContext";
 import Checkout from "./componentes/Checkout/Checkout";
-
+import Main from "./componentes/Main/Main";
 
 
 
@@ -28,6 +28,7 @@ function App() {
         <NavBar/>
 
         <Routes>
+          <Route path="/main" element={<Main/>}/>
           <Route path="/" element={<ItemListContainer/>}/>
           <Route path="/juegos/:categoria" element={<ItemListContainer/>}/>
           <Route path="/detalles/:itemId" element={<ItemDetailContainer/>}/>

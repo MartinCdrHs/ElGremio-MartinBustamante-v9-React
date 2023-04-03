@@ -28,13 +28,7 @@ const ItemDetailContainer = () => {
             })
             .finally (()=>{
                 setLoading(false)
-            }) 
-
-
-        // buscarDetalles(Number(itemId))
-        // .then((res)=>{
-        //     setItem (res)
-        // })
+            })
         
     },[])
 

@@ -1,0 +1,47 @@
+.padding-top{
+    padding-top: 160px;
+}
+
+.rojo-gremio{
+    color: #cc0d0d;
+}
+
+h1{
+    text-align: center;
+    font-size: 45px !important;
+    padding: 15px
+}
+
+h2{
+    padding: 20px;
+    font-size: 26px !important;
+    color: #ffffff;
+    text-align: center;
+
+    .h2-grande {
+        font-size: 28px;
+    }
+}
+
+.grid-primera-letra{
+    text-align: justify;
+    display: grid;
+    grid-template-areas:
+    "letra-inicial fraccion"
+    "resto-parrafo resto-parrafo" ;
+    grid-template-columns: 70px auto;
+    align-items: center;
+}
+
+.letra-inicial{
+    font-size: 70px;
+    grid-area: letra-inicial;
+}
+
+.fraccion{
+    grid-area: fraccion;
+}
+
+.resto-parrafo{
+    grid-area: resto-parrafo;
+}
