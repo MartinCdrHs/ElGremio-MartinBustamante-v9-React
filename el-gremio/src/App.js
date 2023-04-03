@@ -12,6 +12,7 @@ import { Cart } from "./componentes/Cart/Cart";
 import { CartProvider } from "./Context/CartContext";
 import Checkout from "./componentes/Checkout/Checkout";
 import Main from "./componentes/Main/Main";
+import Tavern from "./componentes/Tavern/Tavern";
 
 
 
@@ -29,6 +30,7 @@ function App() {
 
         <Routes>
           <Route path="/main" element={<Main/>}/>
+          <Route path="/tavern" element={<Tavern/>}/>
           <Route path="/" element={<ItemListContainer/>}/>
           <Route path="/juegos/:categoria" element={<ItemListContainer/>}/>
           <Route path="/detalles/:itemId" element={<ItemDetailContainer/>}/>

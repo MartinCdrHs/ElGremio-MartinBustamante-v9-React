@@ -15,7 +15,7 @@ const MainGreeting = () => {
                     class="h2-grande rojo-gremio">Dungeons & Dragons</span> nos tiene acostumbrados, tú y tus compañeros podréis
                     pasar grandes momentos acompañados de estupendas comidas y bebidas mientras os divertís con nuestra creciente
                     selección de juegos de mesa.
-                    ¡Armaos de valor y comenzad vuesta aventura! ¡Os esperamos!</span>
+                    ¡Armaos de valor y comenzad vuestra aventura! ¡Os esperamos!</span>
             </h2>
         </div>
     )

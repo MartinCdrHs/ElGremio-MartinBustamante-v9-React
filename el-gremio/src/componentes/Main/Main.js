@@ -1,5 +1,7 @@
+
 import MainGreeting from "../MainGreeting/MainGreeting";
 import MainSelector from "../MainSelector/MainSelector";
+import MainCom from "../MainCom/MainCom";
 
 
 
@@ -9,6 +11,7 @@ const Main = () => {
         <div>
             <MainGreeting/>
             <MainSelector/>
+            <MainCom/>
         </div>
     )
 }

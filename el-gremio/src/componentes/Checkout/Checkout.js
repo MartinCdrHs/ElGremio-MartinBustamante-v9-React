@@ -3,7 +3,8 @@ import "./Checkout.scss"
 import { useContext, useState } from "react";
 import {collection, addDoc, writeBatch, where, documentId, query, getDocs } from "firebase/firestore";
 import { Navigate } from "react-router-dom";
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+import withReactContent from "sweetalert2-react-content";
 import {Formik } from "formik";
 import * as Yup from "yup";
 
@@ -13,6 +14,7 @@ import FormGreeting from "../FormGreeting/FormGreeting";
 import { CartContext } from "../../Context/CartContext";
 import CheckoutGreeting from "../CheckoutGreeting/CheckoutGreeting";
 
+const MySwal = withReactContent(Swal)
 
 
 const schema = Yup.object().shape({
@@ -76,13 +78,16 @@ const Checkout = () => {
 
                 console.log(item.nombre);
 
-                Swal.fire({
+                MySwal.fire({
                     title: 'Lo lamento Aventurero',
                     background: "#000000",
                     color: "#ffffff",
-                    html: `<p>Parece que ya no tenemos stock de </p>
-                        <p>${item.nombre}</p>    
-                    `,
+                    html: (
+                        <div>
+                            <p>Parece que ya no tenemos stock de </p>
+                            {outOfStock.map((item) => (<p>{item.nombre}</p>))}
+                        </div>  
+                    ),
                     confirmButtonColor: "#cc0d0d",
                     confirmButtonText: 'Ir a la Bolsa'
                   }).then(() => {

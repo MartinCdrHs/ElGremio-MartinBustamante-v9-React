@@ -18,6 +18,14 @@ const Contador = ({initial, stock, cantidad, setCantidad, agregar})=> {
         
     }
 
+    if(stock === 0){
+        return (
+            <div className="carrito-controller">
+                <p className="no-stock">Sin stock!</p>
+            </div>
+        )
+    }
+
     return(
         <div className="carrito-controller">
             <div className="caja-contador" id="cont">
