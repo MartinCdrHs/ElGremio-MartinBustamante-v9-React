@@ -15,15 +15,13 @@ const NavBar = () => {
                 <CartWidget/>
 
                 <nav className="nav-bar">
-                    <Link className="nav_link" to="/main">El Gremio</Link>
+                    <Link className="nav_link" to="/">El Gremio</Link>
 
                     <Link className="nav_link" to="/tavern">La Taberna</Link>
 
-                    <Link className="nav_link" to="/">El Tablón</Link>
+                    <Link className="nav_link" to="/board">El Tablón</Link>
 
-                    <Link className="nav_link" to="">Reservas</Link>
-
-                    <Link className="nav_link" to="">Cómo llegar</Link>
+                    <Link className="nav_link" to="/comollegar">Cómo llegar</Link>
                 </nav>
             </div>
         </header>

@@ -23,7 +23,7 @@ export const Cart = ()=> {
                 <div className="bolsa-vacia">
                     No tienes productos en tu bolsa!
                 </div>
-                <Link to= "/"><button className="btn-cart">Seguir comprando</button></Link>
+                <Link to= "/board"><button className="btn-cart">Seguir comprando</button></Link>
             </div>
 
         :<div>

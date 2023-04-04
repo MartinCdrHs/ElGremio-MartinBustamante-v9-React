@@ -122,7 +122,7 @@ const Checkout = () => {
     }
 
     if(cart.length === 0){
-        return <Navigate to= "/"/>
+        return <Navigate to= "/board"/>
     }
     
 

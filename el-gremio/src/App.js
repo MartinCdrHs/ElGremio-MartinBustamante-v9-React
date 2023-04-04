@@ -13,6 +13,7 @@ import { CartProvider } from "./Context/CartContext";
 import Checkout from "./componentes/Checkout/Checkout";
 import Main from "./componentes/Main/Main";
 import Tavern from "./componentes/Tavern/Tavern";
+import ComoLlegar from "./componentes/ComoLlegar/ComoLlegar";
 
 
 
@@ -29,15 +30,14 @@ function App() {
         <NavBar/>
 
         <Routes>
-          <Route path="/main" element={<Main/>}/>
+          <Route path="/" element={<Main/>}/>
           <Route path="/tavern" element={<Tavern/>}/>
-          <Route path="/" element={<ItemListContainer/>}/>
-          <Route path="/juegos/:categoria" element={<ItemListContainer/>}/>
-          <Route path="/detalles/:itemId" element={<ItemDetailContainer/>}/>
+          <Route path="/board" element={<ItemListContainer/>}/>
+          <Route path="/board/:categoria" element={<ItemListContainer/>}/>
+          <Route path="/board/detalles/:itemId" element={<ItemDetailContainer/>}/>
           <Route path="/cart" element={<Cart/>} />
           <Route path="/checkout" element={<Checkout/>} />
-          {/* <Route path="" element={}/> */}
-
+          <Route path="/comollegar" element={<ComoLlegar/>} />
         </Routes>
         
       </BrowserRouter>

@@ -3,7 +3,7 @@ import "./TavernMenu.scss"
 const TavernMenu = () => {
 
     return (
-        <div>
+        <div className="menu-container">
             <div className="titulo-carta">
                 Comidas
             </div>

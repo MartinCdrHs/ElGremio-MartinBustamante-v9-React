@@ -6,9 +6,9 @@ const ItemFilter = ()=> {
 
     return (
         <div className="caja-filtros">
-            <Link to="/juegos/rol"> <button className="filtro">Rol</button> </Link> 
-            <Link to="/juegos/cartas"> <button className="filtro">Cartas</button> </Link> 
-            <Link to="/juegos/board"> <button className="filtro">Board</button> </Link> 
+            <Link to="/board/rol"> <button className="filtro">Rol</button> </Link> 
+            <Link to="/board/cartas"> <button className="filtro">Cartas</button> </Link> 
+            <Link to="/board/board"> <button className="filtro">Board</button> </Link> 
         </div>
     )
 }

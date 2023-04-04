@@ -7,7 +7,7 @@ const Item = ({item}) => {
                 <img src={item.imagen} alt={item.nombre} className="juego-img"/>
                 <p className="juego-nombre">{item.nombre}</p>
                 <span className="juego-precio">Precio: ${item.precio}</span>
-                <Link to={`/detalles/${item.id}`}><button className="juegos-boton">Detalles</button></Link> 
+                <Link to={`/board/detalles/${item.id}`}><button className="juegos-boton">Detalles</button></Link> 
         </div>
     )
 }
