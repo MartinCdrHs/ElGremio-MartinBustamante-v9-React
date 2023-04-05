@@ -14,7 +14,7 @@ const MainSelector = () => {
                 <div className="row">
                     <div className="col-sm-12 col-md-6 hover-cont">
                         <figure className="figure">
-                            <Link to="/taberna"><img src="./taberna.png" className="figure-img img-fluid rounded"
+                            <Link to="/tavern"><img src="./taberna.png" className="figure-img img-fluid rounded"
                                 alt="Taberna"/></Link>
                             <figcaption className="figure-caption">¡No pensareis partir a vuestra aventura con el estómago vacío! ¡En <span
                                 className="rojo-gremio">La Taberna</span> podráis disfrutar de nuestra comida!</figcaption>
@@ -23,7 +23,7 @@ const MainSelector = () => {
                     
                     <div className="col-sm-12 col-md-6 hover-cont">
                         <figure className="figure">
-                            <Link to= "/tablon"><img src="./tablon.png" className="figure-img img-fluid rounded"
+                            <Link to= "/board"><img src="./tablon.png" className="figure-img img-fluid rounded"
                                 alt="El Tablón"/></Link>
                             <figcaption className="figure-caption">Pasad por <span className="rojo-gremio">El Tablón</span> y elegid cual será
                             vuestra próxima gran aventura!</figcaption>

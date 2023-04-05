@@ -20,6 +20,9 @@ const ItemDetailContainer = () => {
         const docRef = doc( db, "juegos", itemId)
 
         getDoc(docRef)
+
+            //eslint-disable-next-line
+
             .then((doc)=>{
                 setItem({
                     id: doc.id,
