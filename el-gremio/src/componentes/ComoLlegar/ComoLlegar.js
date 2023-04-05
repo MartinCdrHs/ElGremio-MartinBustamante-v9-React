@@ -1,4 +1,5 @@
 import ComollegarGreeting from "../ComollegarGreeging/ComollegarGreeting";
+import ComollegarMapa from "../ComollegarMapa/ComollegarMapa";
 
 
 const ComoLlegar = () => {
@@ -6,6 +7,7 @@ const ComoLlegar = () => {
     return (
         <div>
             <ComollegarGreeting/>
+            <ComollegarMapa/>
         </div>
     )
 }
